@@ -35,9 +35,3 @@
     width: 120px;
     border-radius: 120px;
 }
-
-@media screen and (max-width: 768px){
-    #content{
-        text-align: center;
-    }
-}
