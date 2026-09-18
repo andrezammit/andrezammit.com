@@ -35,3 +35,30 @@
     width: 120px;
     border-radius: 120px;
 }
+
+.projects {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.projects li {
+    margin-top: 24px;
+}
+
+.projects h3 {
+    font-size: 1.25rem;
+}
+
+.projects p {
+    margin-bottom: 0;
+}
+
+.projects a {
+    text-decoration: underline;
+}
+
+.projects a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
