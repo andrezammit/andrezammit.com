@@ -3,3 +3,15 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .projects-panel {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
