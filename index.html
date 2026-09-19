@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110472122-1"></script>
@@ -16,23 +16,60 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <meta name="description" content="Software Developer">
+        <meta name="description" content="The personal website of André Zammit. Find my projects, social profiles, and contact information.">
         
+        <link rel="canonical" href="https://andrezammit.com/">
+        <meta property="og:type" content="website" />
+        <meta property="og:image:alt" content="André Zammit" />
         <meta property="og:image" content="https://andrezammit.com/assets/profile_og.jpg" />
-        <meta property="og:description" content="Software Developer" />
+        <meta property="og:description" content="The personal website of André Zammit. Find my projects, social profiles, and contact information." />
         <meta property="og:url" content="https://andrezammit.com/" />
         <meta property="og:title" content="André Zammit" />
         <meta property="og:site_name" content="André Zammit" />
         
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="https://andrezammit.com/">
+        <meta name="twitter:site" content="@andrezammit87">
         <meta name="twitter:title" content="André Zammit">
-        <meta name="twitter:description" content="Software Developer">
+        <meta name="twitter:description" content="The personal website of André Zammit. Find my projects, social profiles, and contact information.">
+        <meta name="twitter:image:alt" content="André Zammit">
         <meta name="twitter:image" content="https://andrezammit.com/assets/profile_og.jpg">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://andrezammit.com/#website",
+                    "url": "https://andrezammit.com/",
+                    "name": "André Zammit"
+                },
+                {
+                    "@type": "ProfilePage",
+                    "@id": "https://andrezammit.com/#profile",
+                    "url": "https://andrezammit.com/",
+                    "name": "André Zammit",
+                    "isPartOf": { "@id": "https://andrezammit.com/#website" },
+                    "mainEntity": {
+                        "@type": "Person",
+                        "@id": "https://andrezammit.com/#person",
+                        "name": "André Zammit",
+                        "url": "https://andrezammit.com/",
+                        "image": "https://andrezammit.com/assets/profile_og.jpg",
+                        "sameAs": [
+                            "https://www.facebook.com/mouzer",
+                            "https://x.com/andrezammit87",
+                            "https://www.linkedin.com/in/andrezammit/",
+                            "https://github.com/andrezammit"
+                        ]
+                    }
+                }
+            ]
+        }
+        </script>
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="assets/style-mobile.css"  media="(max-width: 768px)">
     </head>
@@ -48,21 +85,55 @@
                     <div class="jumbotron">
                         <div class="row align-items-center">
                             <div class="col-md-auto">
-                                <img id="profile" src="assets/profile-min.jpg">
+                                <img id="profile" src="assets/profile-min.jpg" alt="André Zammit">
                             </div>
                             <div class="col-md-auto">
                                 <h1 class="display-3">André Zammit</h1>
-                                <p class="lead">Software Developer</p>
                             </div>
                         </div>
                         <hr class="my-4">
         
-                        <a href="https://www.facebook.com/mouzer" target="_blank" class="fa fa-facebook"></a>
-                        <a href="https://x.com/andrezammit87" target="_blank" class="fa fa-twitter"></a>
-                        <a href="https://www.linkedin.com/in/andrezammit/" target="_blank" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/andrezammit" target="_blank" class="fa fa-github"></a>
-                        <a href="mailto:mawzer@gmail.com" target="_blank" class="fa fa-envelope-o"></a>
+                        <a href="https://www.facebook.com/mouzer" target="_blank" class="fa fa-facebook" aria-label="André Zammit on Facebook"></a>
+                        <a href="https://x.com/andrezammit87" target="_blank" class="fa fa-twitter" aria-label="André Zammit on X"></a>
+                        <a href="https://www.linkedin.com/in/andrezammit/" target="_blank" class="fa fa-linkedin" aria-label="André Zammit on LinkedIn"></a>
+                        <a href="https://github.com/andrezammit" target="_blank" class="fa fa-github" aria-label="André Zammit on GitHub"></a>
+                        <a href="mailto:mawzer@gmail.com" target="_blank" class="fa fa-envelope-o" aria-label="Email André Zammit"></a>
                     </div>
+                    <section class="projects-panel" aria-labelledby="projects-heading">
+                        <h2 id="projects-heading">Projects</h2>
+                        <ul class="projects">
+                            <li>
+                                <span class="project-kind">Web app</span>
+                                <h3>SocialTicker</h3>
+                                <p>Keep up with live updates from X in a social ticker.</p>
+                                <a href="https://socialticker.andrezammit.com/" target="_blank" rel="noopener noreferrer">Open app <span class="sr-only">SocialTicker</span><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li>
+                                <span class="project-kind">Browser extension</span>
+                                <h3>PostsDash</h3>
+                                <p>Your X / Twitter feed, reimagined as a live, tiled dashboard.</p>
+                                <a href="https://postsdash.com/" target="_blank" rel="noopener noreferrer">Get extension <span class="sr-only">PostsDash</span><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li>
+                                <span class="project-kind">Browser extension</span>
+                                <h3>Instagram Dashboard</h3>
+                                <p>A tiled view of your Instagram feed that updates automatically.</p>
+                                <a href="https://chromewebstore.google.com/detail/instagram-dashboard/bofgllabgmnckgnakhicnkbhoanfaidb" target="_blank" rel="noopener noreferrer">Get extension <span class="sr-only">Instagram Dashboard</span><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li>
+                                <span class="project-kind">Web app</span>
+                                <h3>Media Library</h3>
+                                <p>Browse and search my collection of music, films, and books.</p>
+                                <a href="https://medialibrary.andrezammit.com/" target="_blank" rel="noopener noreferrer">Open app <span class="sr-only">Media Library</span><span aria-hidden="true">↗</span></a>
+                            </li>
+                            <li>
+                                <span class="project-kind">Web app</span>
+                                <h3>Music DNA</h3>
+                                <p>An interactive portrait of my music collection, exploring artists, eras, and formats.</p>
+                                <a href="https://musicdna.andrezammit.com/" target="_blank" rel="noopener noreferrer">Open app <span class="sr-only">Music DNA</span><span aria-hidden="true">↗</span></a>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </div>
